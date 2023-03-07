@@ -1,0 +1,282 @@
+ .cabecera{
+    justify-content: first baseline;  /* con esto ya logré mover todo lo contenido en la class */ 
+    /* align-items: center; */
+    /* background: #f9f9f9;
+    display: flex; */
+    /* justify-content: space-between; */
+    /* padding-left: 2rem;    el padding lo decidi aplicar uno a uno mejor en el html 
+    padding-right: 2rem; */
+} 
+
+
+ /* .banner_imagen{ */
+    /* justify-content: flex-start; */
+    /* padding: left 30px; ;
+    background: #f9f9f9; */
+     /* width: max-content; */
+    /* padding-left: 18rem; */
+   
+    /* display: flex; */
+/* }  */
+
+
+/* .container{
+    position: relative;
+    width: 100vh;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:cornsilk;
+    flex-wrap: wrap; 
+
+
+} */
+
+.img1{
+height: auto;
+width: auto;
+max-height: 1000px;  /* estos dos redimenionan la img Front_img */
+max-width: 1000px;
+border-radius: 3px;
+margin: 10px;
+padding-left:  16rem ;  /* esto es lo que mueve la imagen */
+
+}
+
+.img2{
+height: auto;
+width: auto;
+max-height: 1000px;  /* estos dos redimenionan la img Front_img */
+max-width: 1000px;
+border-radius: 3px;
+margin: 10px;
+padding-left:  16rem ;  /* esto es lo que mueve la imagen */
+}
+
+
+.img3{
+    height: auto;
+    width: auto;
+    max-height: 1000px;  /* estos dos redimenionan la img Front_img */
+    max-width: 1000px;
+    border-radius: 3px;
+    margin: 10px;
+    padding-left:  12rem ;  /* esto es lo que mueve la imagen */
+    }
+
+.img4{
+    height: auto;
+    width: auto;
+    max-height: 600px;  /* estos dos redimenionan la img Front_img */
+    max-width:  600px;
+    border-radius: 3px;
+    margin: 10px;
+    padding-left:  25rem ;  /* esto es lo que mueve la imagen */
+    }   
+
+.img5{
+    height: auto;
+    width: auto;
+    max-height: 600px;  /* estos dos redimenionan la img Front_img */
+    max-width:  600px;
+    border-radius: 3px;
+    margin: 10px;
+    padding-left:  27rem ;  /* esto es lo que mueve la imagen */
+    }   
+    
+.img6{
+    height: auto;
+    width: auto;
+    max-height: 600px;  /* estos dos redimenionan la img Front_img */
+    max-width:  600px;
+    border-radius: 3px;
+    margin: 10px;
+    padding-left:  25rem ;  /* esto es lo que mueve la imagen */
+    }
+
+.img7{
+    height: auto;
+    width: auto;
+    max-height: 900px;  /* estos dos redimenionan la img Front_img */
+    max-width:  900px;
+    border-radius: 3px;
+    margin: 10px;
+    padding-left:  27rem ;  /* esto es lo que mueve la imagen */
+    }
+
+.img8{
+    height: auto;
+    width: auto;
+    max-height: 500px;  /* estos dos redimenionan la img Front_img */
+    max-width:  500px;
+    border-radius: 3px;
+    margin: 10px;
+    padding-left:  25rem ;  /* esto es lo que mueve la imagen */
+    }
+
+
+
+    .video{
+        padding-left:25rem ;
+    }
+
+
+/*poniendo enlistadas o serialmente las imagenes del carrusel*/
+    .slider-container {
+    display: flex;
+    width: 40%;
+    height: 40vh;
+    overflow-x: scroll;
+
+      /* Vamos a añadir esto  */
+  scroll-snap-type: x mandatory;
+  padding-left: 24rem;  /*18rem*/
+    }
+
+    .slider-container img {
+        flex: 0 0 100%;
+        width: 100%;
+        object-fit: cover;
+
+    /* Vamos a añadir esto  */
+    scroll-snap-align: center;
+    padding-left: 24rem;  /*18rem*/
+      }
+    
+    
+      /* #formula{
+        font-family: verdana;
+        margin: 10px auto;
+        padding: 30px;
+        background: fixed;
+        font-size: 14px;
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+     */
+
+
+           /*botón para enviar con 3 acciones */
+     .btn{
+        border-radius: 3px;
+        display: inline-block;
+        padding: 20px 15px;
+        text-decoration: none; 
+        text-shadow: 0 1px 0 rgba(255,255,255,0.3); /* (green, blue, alpha); */
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+     }
+
+
+     .btn-green{   
+        color:white; /*color del texto "enviar datos" */
+        background-color: #3cc93F;
+     }
+
+     .btn-green:hover{
+        background-color: #37B839;
+     }
+
+     /*el hover es el efecto 2do que sucede al pasar el mouse y al hacer clic
+     y el active cuando se hace clic ya para enviarlo son 3 efectos distintos*/
+
+     .btn-green:active{
+        background-color: #29962A;
+     }
+
+
+     /* html en css */
+
+     body{
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-color: #18A383; */
+        box-sizing: border-box;
+        
+     }
+
+
+
+     form{     /*Combinación  de colores blanco con rojo */
+        /* background-color:#29962A; color: rgb(2555, 0, 0); color: rgb(100%, 0, 0); */
+        /* background-color: #29962A; */
+        /* opacity: 0.33; */
+        /* background-color: 2px solid transparent; */
+        background-color: #29962A; color:white; /*con un color mas se conbina con el blanco el texto*/
+        -webkit-text-fill-color: rgb(50, 94, 205); /*llena de color azul letras*/
+        -webkit-text-stroke: 0.8px black;
+        border-style:groove; /*contorno del borde del form*/
+        color:#999;  /*se añade a los bordes del color del texto*/
+        background:rgba(77, 210, 20, 0.5) ;  /*color claro con color de fondo,el ultimo controla la transparencia */
+        font-size:x-large;
+        margin: 0 auto;   /*centra el formulario*/
+        width: 300px;
+        border-radius: 10px;
+        padding: 10px;
+        
+     }
+     /* nota: form no es una clase sino en este caso refiere a la 
+     etiqueta form por eso no lleva . */
+     
+     /* logre aplicar como quería 2 colores al borde del color del texto 1 un relleno al mismo 
+     con lo cuál resalta mucho mas el formulario y las letras se ven mas estilizadas además
+     combinan con el fondo del formulario en general pues no quería que fuera ni blancas ni negras
+     menos amarillas o moradas */
+
+    /*estilizando los inputs y las text area*/
+    
+    input, textarea{
+        border:0;
+        outline: none; /*quitar el brillo x default de los cuadros que sale al hacer clic */
+        border-radius: 12px;
+        padding: 20px;  /*amplia el espaciado -aqui en los inputs y textareas*/
+font-size: 70%;
+    } 
+
+    .field{
+        border:solid 1px #ccc; /* rgb(59, 4, 4); quite el color vino de los contornos del los textbox*/
+        /* padding: 20x; */
+     font-size: 0.8em; /*equivale  a % */
+     
+     width: 258px;
+
+    }
+
+
+    /*el focus es como el hover hace efectos en el elemento posterior a una acción
+    aqui al clic cambia de color el borde de campo */
+    .field:focus{
+        border-color: #29962A;
+
+        text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+
+        /* Resalta el texto con un halo aqua mientras se escribe */
+    }
+
+
+    .center-content{
+        text-align: center;
+    }
+
+
+
+
+     /*Parte del Carrusel de imágenes*/
+
+/*Con esto conseguimos que las imágenes estén alineadas de izquierda a derecha. 
+Para ello usaremos display: flex en nuestro contenedor para que se alineen todos 
+los elementos hijo. Además, vamos a decirle que ocupe el 100% de la pantalla usando el width: 100% y height: 100vh.
+
+En el caso de las imágenes las estiramos usando flex: 0 0 100% y width: 100% para que estas ocupen el 100% del contenedor, 
+y para que no nos queden con una relación de aspecto erróneo usaremos object-fit: cover.*/
+
+
+
+/* Usaremos en el contenedor la propiedad scroll-snap-type: x mandatory;. Esto nos indicará que queremos capturar 
+el scroll horizontal del contenedor y que es obligatorio que siempre, al dejar de hacer scroll, vaya a un punto de anclaje. 
+De esta forma evitaremos que nuestro carrusel se quede en mitad de dos imágenes. */
+
+
+/* Y en las imágenes, usaremos la propiedad scroll-snap-align: center;. Esto le indicará que el punto de anclaje 
+es el centro del elemento. Así, nuestras imágenes siempre quedarán alineadas. */
